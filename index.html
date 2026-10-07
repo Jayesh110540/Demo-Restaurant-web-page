@@ -1,0 +1,1662 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Green Leaf | Pure Veg Restaurant</title>
+
+    <meta name="description"
+          content="Green Leaf Pure Veg Restaurant - Fresh, authentic and delicious vegetarian food made with love.">
+    <meta name="keywords"
+          content="pure veg restaurant, vegetarian restaurant, paneer, biryani, dosa, thali, Indian food">
+    <meta name="author" content="Green Leaf Pure Veg Restaurant">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- =========================
+     HEADER
+========================= -->
+<header class="header">
+
+    <nav class="navbar">
+
+        <a href="#home" class="logo">
+            <span class="logo-icon">🌿</span>
+
+            <span class="logo-text">
+                Green Leaf
+                <small>PURE VEG RESTAURANT</small>
+            </span>
+        </a>
+
+        <div class="nav-links" id="navLinks">
+
+            <a href="#home" onclick="closeMenu()">Home</a>
+            <a href="#about" onclick="closeMenu()">About</a>
+            <a href="#menu" onclick="closeMenu()">Menu</a>
+            <a href="#recipes" onclick="closeMenu()">Recipes</a>
+            <a href="#offers" onclick="closeMenu()">Offers</a>
+            <a href="#reviews" onclick="closeMenu()">Reviews</a>
+            <a href="#reservation" onclick="closeMenu()">Reservation</a>
+            <a href="#contact" onclick="closeMenu()">Contact</a>
+
+        </div>
+
+        <div class="nav-actions">
+
+            <button
+                type="button"
+                class="icon-button"
+                onclick="openSearch()"
+                aria-label="Search">
+                🔍
+            </button>
+
+            <button
+                type="button"
+                class="cart-button"
+                onclick="openCart()"
+                aria-label="Shopping cart">
+
+                🛒
+                <span id="cartCount">0</span>
+
+            </button>
+
+            <button
+                type="button"
+                class="menu-toggle"
+                onclick="toggleMenu()"
+                aria-label="Open menu">
+
+                ☰
+
+            </button>
+
+        </div>
+
+    </nav>
+
+</header>
+
+
+<!-- =========================
+     SEARCH OVERLAY
+========================= -->
+<div class="search-overlay" id="searchOverlay">
+
+    <div class="search-container">
+
+        <button
+            type="button"
+            class="close-search"
+            onclick="closeSearch()"
+            aria-label="Close search">
+            ✕
+        </button>
+
+        <span class="search-label">GREEN LEAF</span>
+
+        <h2>Find Your Favourite Dish</h2>
+
+        <p>
+            Search from our delicious vegetarian menu.
+        </p>
+
+        <div class="search-input-box">
+
+            <input
+                type="search"
+                id="searchInput"
+                placeholder="Search paneer, biryani, dosa..."
+                autocomplete="off">
+
+            <button
+                type="button"
+                onclick="searchFood()"
+                aria-label="Search">
+                🔍
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<!-- =========================
+     HERO SECTION
+========================= -->
+<section class="hero" id="home">
+
+    <div class="hero-overlay"></div>
+
+    <div class="hero-content">
+
+        <div class="hero-badge">
+            🌿 100% PURE VEGETARIAN
+        </div>
+
+        <p class="hero-small-title">
+            WELCOME TO GREEN LEAF
+        </p>
+
+        <h1>
+            Fresh. Pure.<br>
+            <span>Delicious.</span>
+        </h1>
+
+        <p class="hero-description">
+            Experience the authentic taste of India with freshly prepared
+            vegetarian dishes, traditional recipes and ingredients chosen
+            with care.
+        </p>
+
+        <div class="hero-buttons">
+
+            <a href="#menu" class="primary-button">
+                Explore Our Menu
+                <span>→</span>
+            </a>
+
+            <a href="#reservation" class="secondary-button">
+                Reserve a Table
+            </a>
+
+        </div>
+
+        <div class="hero-features">
+
+            <div class="hero-feature">
+                <strong>🌱</strong>
+                <span>100% Vegetarian</span>
+            </div>
+
+            <div class="hero-feature">
+                <strong>🥬</strong>
+                <span>Fresh Ingredients</span>
+            </div>
+
+            <div class="hero-feature">
+                <strong>👨‍🍳</strong>
+                <span>Made Fresh Daily</span>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     ABOUT SECTION
+========================= -->
+<section class="section about" id="about">
+
+    <div class="section-container about-grid">
+
+        <div class="about-visual">
+
+            <div class="about-image">
+
+                <img
+                    src="https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=900&q=85"
+                    alt="Fresh vegetarian food"
+                    loading="lazy">
+
+                <div class="about-image-badge">
+                    <strong>100%</strong>
+                    <span>PURE VEG</span>
+                </div>
+
+            </div>
+
+            <div class="experience-card">
+
+                <span class="experience-icon">🌿</span>
+
+                <div>
+                    <strong>Fresh & Pure</strong>
+                    <span>Every single day</span>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="about-content">
+
+            <span class="section-label">
+                OUR STORY
+            </span>
+
+            <h2>
+                Food Made With
+                <span>Love & Tradition</span>
+            </h2>
+
+            <p class="lead">
+                At Green Leaf, we believe that great food begins with
+                fresh ingredients, traditional recipes and a little love.
+            </p>
+
+            <p>
+                Our kitchen brings together the rich flavours of Indian
+                vegetarian cuisine. From creamy paneer dishes and fragrant
+                biryani to crispy dosas and delicious desserts, every dish
+                is prepared fresh for you.
+            </p>
+
+            <div class="about-points">
+
+                <div class="about-point">
+                    <span>✓</span>
+                    <div>
+                        <strong>100% Vegetarian</strong>
+                        <p>Pure vegetarian kitchen and menu.</p>
+                    </div>
+                </div>
+
+                <div class="about-point">
+                    <span>✓</span>
+                    <div>
+                        <strong>Fresh Ingredients</strong>
+                        <p>Quality ingredients selected every day.</p>
+                    </div>
+                </div>
+
+                <div class="about-point">
+                    <span>✓</span>
+                    <div>
+                        <strong>Authentic Flavours</strong>
+                        <p>Traditional Indian taste with modern presentation.</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <a href="#menu" class="text-button">
+                Discover Our Menu →
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     STATS
+========================= -->
+<section class="stats">
+
+    <div class="stats-container">
+
+        <div class="stat">
+            <strong>100%</strong>
+            <span>Pure Vegetarian</span>
+        </div>
+
+        <div class="stat">
+            <strong>25+</strong>
+            <span>Delicious Dishes</span>
+        </div>
+
+        <div class="stat">
+            <strong>4.9</strong>
+            <span>Customer Rating</span>
+        </div>
+
+        <div class="stat">
+            <strong>7 Days</strong>
+            <span>Open Every Week</span>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     MENU SECTION
+========================= -->
+<section class="section menu" id="menu">
+
+    <div class="section-heading">
+
+        <span class="section-label">
+            OUR MENU
+        </span>
+
+        <h2>
+            Deliciously <span>Vegetarian</span>
+        </h2>
+
+        <p>
+            Carefully prepared dishes using fresh ingredients
+            and authentic Indian flavours.
+        </p>
+
+    </div>
+
+
+    <div class="menu-filters">
+
+        <button
+            type="button"
+            class="filter-button active"
+            onclick="filterMenu('all', this)">
+            All
+        </button>
+
+        <button
+            type="button"
+            class="filter-button"
+            onclick="filterMenu('starters', this)">
+            Starters
+        </button>
+
+        <button
+            type="button"
+            class="filter-button"
+            onclick="filterMenu('main-course', this)">
+            Main Course
+        </button>
+
+        <button
+            type="button"
+            class="filter-button"
+            onclick="filterMenu('breads', this)">
+            Breads
+        </button>
+
+        <button
+            type="button"
+            class="filter-button"
+            onclick="filterMenu('south-indian', this)">
+            South Indian
+        </button>
+
+        <button
+            type="button"
+            class="filter-button"
+            onclick="filterMenu('desserts', this)">
+            Desserts
+        </button>
+
+        <button
+            type="button"
+            class="filter-button"
+            onclick="filterMenu('drinks', this)">
+            Drinks
+        </button>
+
+    </div>
+
+
+    <div class="menu-grid" id="menuGrid">
+
+        <!-- Paneer Tikka -->
+        <article class="food-card" data-category="starters">
+
+            <div class="food-image">
+
+                <img
+                    src="https://images.unsplash.com/photo-1567188040759-fb8a883dc6d8?auto=format&fit=crop&w=700&q=85"
+                    alt="Paneer Tikka"
+                    loading="lazy">
+
+                <span class="food-tag">CHEF'S PICK</span>
+
+            </div>
+
+            <div class="food-content">
+
+                <div class="food-title-row">
+                    <h3>Paneer Tikka</h3>
+                    <strong>₹220</strong>
+                </div>
+
+                <p>
+                    Char-grilled paneer with colourful vegetables,
+                    herbs and aromatic spices.
+                </p>
+
+                <button
+                    type="button"
+                    class="add-button"
+                    onclick="addToCart('Paneer Tikka', 220)">
+                    Add to Cart <span>+</span>
+                </button>
+
+            </div>
+
+        </article>
+
+
+        <!-- Veg Momos -->
+        <article class="food-card" data-category="starters">
+
+            <div class="food-image">
+
+                <img
+                    src="https://images.unsplash.com/photo-1496116218417-1a781b1c416c?auto=format&fit=crop&w=700&q=85"
+                    alt="Vegetable Momos"
+                    loading="lazy">
+
+            </div>
+
+            <div class="food-content">
+
+                <div class="food-title-row">
+                    <h3>Veg Momos</h3>
+                    <strong>₹150</strong>
+                </div>
+
+                <p>
+                    Soft steamed dumplings filled with seasoned
+                    vegetables and served with chutney.
+                </p>
+
+                <button
+                    type="button"
+                    class="add-button"
+                    onclick="addToCart('Veg Momos', 150)">
+                    Add to Cart <span>+</span>
+                </button>
+
+            </div>
+
+        </article>
+
+
+        <!-- Paneer Butter Masala -->
+        <article class="food-card" data-category="main-course">
+
+            <div class="food-image">
+
+                <img
+                    src="https://images.unsplash.com/photo-1631452180519-c014fe946bc7?auto=format&fit=crop&w=700&q=85"
+                    alt="Paneer Butter Masala"
+                    loading="lazy">
+
+                <span class="food-tag">POPULAR</span>
+
+            </div>
+
+            <div class="food-content">
+
+                <div class="food-title-row">
+                    <h3>Paneer Butter Masala</h3>
+                    <strong>₹260</strong>
+                </div>
+
+                <p>
+                    Soft paneer cooked in a rich, creamy tomato gravy
+                    with aromatic Indian spices.
+                </p>
+
+                <button
+                    type="button"
+                    class="add-button"
+                    onclick="addToCart('Paneer Butter Masala', 260)">
+                    Add to Cart <span>+</span>
+                </button>
+
+            </div>
+
+        </article>
+
+
+        <!-- Veg Biryani -->
+        <article class="food-card" data-category="main-course">
+
+            <div class="food-image">
+
+                <img
+                    src="https://images.unsplash.com/photo-1589302168068-964664d93dc0?auto=format&fit=crop&w=700&q=85"
+                    alt="Vegetable Biryani"
+                    loading="lazy">
+
+                <span class="food-tag">POPULAR</span>
+
+            </div>
+
+            <div class="food-content">
+
+                <div class="food-title-row">
+                    <h3>Veg Biryani</h3>
+                    <strong>₹230</strong>
+                </div>
+
+                <p>
+                    Fragrant basmati rice layered with vegetables,
+                    herbs and traditional biryani spices.
+                </p>
+
+                <button
+                    type="button"
+                    class="add-button"
+                    onclick="addToCart('Veg Biryani', 230)">
+                    Add to Cart <span>+</span>
+                </button>
+
+            </div>
+
+        </article>
+
+
+        <!-- Dal Makhani -->
+        <article class="food-card" data-category="main-course">
+
+            <div class="food-image">
+
+                <img
+                    src="https://images.unsplash.com/photo-1546833999-b9f581a1996d?auto=format&fit=crop&w=700&q=85"
+                    alt="Dal Makhani"
+                    loading="lazy">
+
+            </div>
+
+            <div class="food-content">
+
+                <div class="food-title-row">
+                    <h3>Dal Makhani</h3>
+                    <strong>₹190</strong>
+                </div>
+
+                <p>
+                    Slow-cooked black lentils finished with butter,
+                    cream and rich Indian spices.
+                </p>
+
+                <button
+                    type="button"
+                    class="add-button"
+                    onclick="addToCart('Dal Makhani', 190)">
+                    Add to Cart <span>+</span>
+                </button>
+
+            </div>
+
+        </article>
+
+
+        <!-- Butter Naan -->
+        <article class="food-card" data-category="breads">
+
+            <div class="food-image">
+
+                <img
+                    src="https://images.unsplash.com/photo-1601050690597-df0568f70950?auto=format&fit=crop&w=700&q=85"
+                    alt="Butter Naan"
+                    loading="lazy">
+
+            </div>
+
+            <div class="food-content">
+
+                <div class="food-title-row">
+                    <h3>Butter Naan</h3>
+                    <strong>₹60</strong>
+                </div>
+
+                <p>
+                    Soft tandoori naan brushed with fresh butter.
+                </p>
+
+                <button
+                    type="button"
+                    class="add-button"
+                    onclick="addToCart('Butter Naan', 60)">
+                    Add to Cart <span>+</span>
+                </button>
+
+            </div>
+
+        </article>
+
+
+        <!-- Aloo Paratha -->
+        <article class="food-card" data-category="breads">
+
+            <div class="food-image">
+
+                <img
+                    src="https://images.unsplash.com/photo-1626132647523-66f5bf380027?auto=format&fit=crop&w=700&q=85"
+                    alt="Aloo Paratha"
+                    loading="lazy">
+
+            </div>
+
+            <div class="food-content">
+
+                <div class="food-title-row">
+                    <h3>Aloo Paratha</h3>
+                    <strong>₹100</strong>
+                </div>
+
+                <p>
+                    Golden stuffed paratha filled with spiced
+                    mashed potatoes and herbs.
+                </p>
+
+                <button
+                    type="button"
+                    class="add-button"
+                    onclick="addToCart('Aloo Paratha', 100)">
+                    Add to Cart <span>+</span>
+                </button>
+
+            </div>
+
+        </article>
+
+
+        <!-- Masala Dosa -->
+        <article class="food-card" data-category="south-indian">
+
+            <div class="food-image">
+
+                <img
+                    src="https://images.unsplash.com/photo-1668236543090-82eba5ee5976?auto=format&fit=crop&w=700&q=85"
+                    alt="Masala Dosa"
+                    loading="lazy">
+
+                <span class="food-tag">FAVOURITE</span>
+
+            </div>
+
+            <div class="food-content">
+
+                <div class="food-title-row">
+                    <h3>Masala Dosa</h3>
+                    <strong>₹160</strong>
+                </div>
+
+                <p>
+                    Crispy dosa filled with traditional potato masala,
+                    served with sambar and chutney.
+                </p>
+
+                <button
+                    type="button"
+                    class="add-button"
+                    onclick="addToCart('Masala Dosa', 160)">
+                    Add to Cart <span>+</span>
+                </button>
+
+            </div>
+
+        </article>
+
+
+        <!-- Idli Sambar -->
+        <article class="food-card" data-category="south-indian">
+
+            <div class="food-image">
+
+                <img
+                    src="https://images.unsplash.com/photo-1589301760014-d929f3979dbc?auto=format&fit=crop&w=700&q=85"
+                    alt="Idli Sambar"
+                    loading="lazy">
+
+            </div>
+
+            <div class="food-content">
+
+                <div class="food-title-row">
+                    <h3>Idli Sambar</h3>
+                    <strong>₹120</strong>
+                </div>
+
+                <p>
+                    Soft steamed idlis served with hot sambar
+                    and fresh coconut chutney.
+                </p>
+
+                <button
+                    type="button"
+                    class="add-button"
+                    onclick="addToCart('Idli Sambar', 120)">
+                    Add to Cart <span>+</span>
+                </button>
+
+            </div>
+
+        </article>
+
+
+        <!-- Gulab Jamun -->
+        <article class="food-card" data-category="desserts">
+
+            <div class="food-image">
+
+                <img
+                    src="https://images.unsplash.com/photo-1601303516534-8d13a5c7f6f0?auto=format&fit=crop&w=700&q=85"
+                    alt="Gulab Jamun"
+                    loading="lazy">
+
+            </div>
+
+            <div class="food-content">
+
+                <div class="food-title-row">
+                    <h3>Gulab Jamun</h3>
+                    <strong>₹90</strong>
+                </div>
+
+                <p>
+                    Soft warm milk dumplings soaked in fragrant
+                    cardamom sugar syrup.
+                </p>
+
+                <button
+                    type="button"
+                    class="add-button"
+                    onclick="addToCart('Gulab Jamun', 90)">
+                    Add to Cart <span>+</span>
+                </button>
+
+            </div>
+
+        </article>
+
+
+        <!-- Vanilla Ice Cream -->
+        <article class="food-card" data-category="desserts">
+
+            <div class="food-image">
+
+                <img
+                    src="https://images.unsplash.com/photo-1570197788417-0e82375c9371?auto=format&fit=crop&w=700&q=85"
+                    alt="Vanilla Ice Cream"
+                    loading="lazy">
+
+            </div>
+
+            <div class="food-content">
+
+                <div class="food-title-row">
+                    <h3>Vanilla Ice Cream</h3>
+                    <strong>₹100</strong>
+                </div>
+
+                <p>
+                    Smooth and creamy vanilla ice cream,
+                    perfect after a delicious meal.
+                </p>
+
+                <button
+                    type="button"
+                    class="add-button"
+                    onclick="addToCart('Vanilla Ice Cream', 100)">
+                    Add to Cart <span>+</span>
+                </button>
+
+            </div>
+
+        </article>
+
+
+        <!-- Sweet Lassi -->
+        <article class="food-card" data-category="drinks">
+
+            <div class="food-image">
+
+                <img
+                    src="https://images.unsplash.com/photo-1571167530149-c1105d2a6e4a?auto=format&fit=crop&w=700&q=85"
+                    alt="Sweet Lassi"
+                    loading="lazy">
+
+            </div>
+
+            <div class="food-content">
+
+                <div class="food-title-row">
+                    <h3>Sweet Lassi</h3>
+                    <strong>₹90</strong>
+                </div>
+
+                <p>
+                    Chilled creamy yogurt drink lightly sweetened
+                    and flavoured with cardamom.
+                </p>
+
+                <button
+                    type="button"
+                    class="add-button"
+                    onclick="addToCart('Sweet Lassi', 90)">
+                    Add to Cart <span>+</span>
+                </button>
+
+            </div>
+
+        </article>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     RECIPES
+========================= -->
+<section class="section recipes" id="recipes">
+
+    <div class="section-heading">
+
+        <span class="section-label">
+            FROM OUR KITCHEN
+        </span>
+
+        <h2>
+            Favourite <span>Recipes</span>
+        </h2>
+
+        <p>
+            Want to recreate the Green Leaf taste at home?
+            Explore some of our favourite vegetarian recipes.
+        </p>
+
+    </div>
+
+
+    <div class="menu-grid recipe-grid">
+
+        <article class="food-card recipe-card">
+
+            <div class="food-image">
+
+                <img
+                    src="https://images.unsplash.com/photo-1631452180519-c014fe946bc7?auto=format&fit=crop&w=700&q=85"
+                    alt="Paneer Butter Masala"
+                    loading="lazy">
+
+            </div>
+
+            <div class="food-content">
+
+                <span class="recipe-category">
+                    MAIN COURSE
+                </span>
+
+                <h3>Paneer Butter Masala</h3>
+
+                <p>
+                    Creamy, rich and full of authentic Indian flavours.
+                </p>
+
+                <button
+                    type="button"
+                    class="recipe-button"
+                    onclick="showRecipe('paneer-butter')">
+                    View Recipe →
+                </button>
+
+            </div>
+
+        </article>
+
+
+        <article class="food-card recipe-card">
+
+            <div class="food-image">
+
+                <img
+                    src="https://images.unsplash.com/photo-1589302168068-964664d93dc0?auto=format&fit=crop&w=700&q=85"
+                    alt="Vegetable Biryani"
+                    loading="lazy">
+
+            </div>
+
+            <div class="food-content">
+
+                <span class="recipe-category">
+                    RICE SPECIAL
+                </span>
+
+                <h3>Vegetable Biryani</h3>
+
+                <p>
+                    Aromatic basmati rice with vegetables and spices.
+                </p>
+
+                <button
+                    type="button"
+                    class="recipe-button"
+                    onclick="showRecipe('veg-biryani')">
+                    View Recipe →
+                </button>
+
+            </div>
+
+        </article>
+
+
+        <article class="food-card recipe-card">
+
+            <div class="food-image">
+
+                <img
+                    src="https://images.unsplash.com/photo-1626132647523-66f5bf380027?auto=format&fit=crop&w=700&q=85"
+                    alt="Aloo Paratha"
+                    loading="lazy">
+
+            </div>
+
+            <div class="food-content">
+
+                <span class="recipe-category">
+                    INDIAN BREAD
+                </span>
+
+                <h3>Aloo Paratha</h3>
+
+                <p>
+                    Golden, crispy and stuffed with delicious potato masala.
+                </p>
+
+                <button
+                    type="button"
+                    class="recipe-button"
+                    onclick="showRecipe('aloo-paratha')">
+                    View Recipe →
+                </button>
+
+            </div>
+
+        </article>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     RECIPE MODAL
+========================= -->
+<div class="recipe-modal" id="recipeModal">
+
+    <div class="recipe-modal-content">
+
+        <button
+            type="button"
+            class="close-recipe"
+            onclick="closeRecipe()"
+            aria-label="Close recipe">
+            ✕
+        </button>
+
+        <div id="recipeContent"></div>
+
+    </div>
+
+</div>
+
+
+<!-- =========================
+     OFFER
+========================= -->
+<section class="offer-section" id="offers">
+
+    <div class="offer-container">
+
+        <div class="offer-content">
+
+            <span class="offer-label">
+                🌿 WEEKEND SPECIAL
+            </span>
+
+            <h2>
+                Family Veg Thali
+                <span>20% OFF</span>
+            </h2>
+
+            <p>
+                Bring your family and enjoy a delicious vegetarian feast
+                together. Fresh food, authentic flavours and great value.
+            </p>
+
+            <div class="offer-details">
+
+                <span>✓ Pure Vegetarian</span>
+                <span>✓ Family Friendly</span>
+                <span>✓ Freshly Prepared</span>
+
+            </div>
+
+            <a href="#reservation" class="primary-button">
+                Reserve Your Table →
+            </a>
+
+        </div>
+
+        <div class="offer-image">
+
+            <img
+                src="https://images.unsplash.com/photo-1601050690117-94f5f6fa8bd7?auto=format&fit=crop&w=1000&q=85"
+                alt="Indian vegetarian thali"
+                loading="lazy">
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     WHY CHOOSE US
+========================= -->
+<section class="section why-us">
+
+    <div class="section-heading">
+
+        <span class="section-label">
+            WHY GREEN LEAF
+        </span>
+
+        <h2>
+            Good Food. <span>Good Mood.</span>
+        </h2>
+
+        <p>
+            Everything we do is focused on giving you a fresh,
+            comfortable and memorable dining experience.
+        </p>
+
+    </div>
+
+
+    <div class="why-grid">
+
+        <div class="why-card">
+
+            <div class="why-icon">🌿</div>
+
+            <h3>100% Pure Veg</h3>
+
+            <p>
+                Every dish on our menu is completely vegetarian.
+            </p>
+
+        </div>
+
+
+        <div class="why-card">
+
+            <div class="why-icon">🥬</div>
+
+            <h3>Fresh Ingredients</h3>
+
+            <p>
+                We use quality and fresh ingredients for every dish.
+            </p>
+
+        </div>
+
+
+        <div class="why-card">
+
+            <div class="why-icon">👨‍🍳</div>
+
+            <h3>Expert Chefs</h3>
+
+            <p>
+                Traditional cooking techniques with a modern touch.
+            </p>
+
+        </div>
+
+
+        <div class="why-card">
+
+            <div class="why-icon">❤️</div>
+
+            <h3>Made With Love</h3>
+
+            <p>
+                Because every great meal should feel special.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     REVIEWS
+========================= -->
+<section class="section reviews" id="reviews">
+
+    <div class="section-heading">
+
+        <span class="section-label">
+            CUSTOMER LOVE
+        </span>
+
+        <h2>
+            What Our Guests <span>Say</span>
+        </h2>
+
+        <p>
+            Real flavours, happy guests and memorable meals.
+        </p>
+
+    </div>
+
+
+    <div class="review-grid">
+
+        <article class="review-card">
+
+            <div class="review-stars">
+                ★★★★★
+            </div>
+
+            <p>
+                “The paneer butter masala was absolutely delicious.
+                Everything tasted fresh and the presentation was beautiful.”
+            </p>
+
+            <div class="review-person">
+
+                <div class="review-avatar">
+                    A
+                </div>
+
+                <div>
+                    <strong>Aditya Sharma</strong>
+                    <span>Verified Guest</span>
+                </div>
+
+            </div>
+
+        </article>
+
+
+        <article class="review-card">
+
+            <div class="review-stars">
+                ★★★★★
+            </div>
+
+            <p>
+                “A wonderful place for vegetarian food. The dosa was
+                crispy, the chutney was fresh and the service was excellent.”
+            </p>
+
+            <div class="review-person">
+
+                <div class="review-avatar">
+                    P
+                </div>
+
+                <div>
+                    <strong>Priya Verma</strong>
+                    <span>Verified Guest</span>
+                </div>
+
+            </div>
+
+        </article>
+
+
+        <article class="review-card">
+
+            <div class="review-stars">
+                ★★★★★
+            </div>
+
+            <p>
+                “Perfect family restaurant. The food was delicious,
+                portions were good and everyone enjoyed the meal.”
+            </p>
+
+            <div class="review-person">
+
+                <div class="review-avatar">
+                    R
+                </div>
+
+                <div>
+                    <strong>Rahul Mehta</strong>
+                    <span>Verified Guest</span>
+                </div>
+
+            </div>
+
+        </article>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     RESERVATION
+========================= -->
+<section class="section reservation" id="reservation">
+
+    <div class="reservation-container">
+
+        <div class="reservation-info">
+
+            <span class="section-label">
+                RESERVE A TABLE
+            </span>
+
+            <h2>
+                Make Your <span>Reservation</span>
+            </h2>
+
+            <p>
+                Planning a family dinner, lunch with friends or a
+                special celebration? Reserve your table with us.
+            </p>
+
+            <div class="reservation-points">
+
+                <div>
+                    <span>✓</span>
+                    <p>Comfortable family seating</p>
+                </div>
+
+                <div>
+                    <span>✓</span>
+                    <p>Fresh vegetarian food</p>
+                </div>
+
+                <div>
+                    <span>✓</span>
+                    <p>Warm and friendly service</p>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="reservation-form-box">
+
+            <form id="reservationForm">
+
+                <div class="form-row">
+
+                    <div class="form-group">
+
+                        <label for="name">
+                            Your Name
+                        </label>
+
+                        <input
+                            type="text"
+                            id="name"
+                            name="name"
+                            placeholder="Enter your name"
+                            required>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="phone">
+                            Phone Number
+                        </label>
+
+                        <input
+                            type="tel"
+                            id="phone"
+                            name="phone"
+                            placeholder="10-digit mobile number"
+                            maxlength="10"
+                            inputmode="numeric"
+                            required>
+
+                    </div>
+
+                </div>
+
+
+                <div class="form-row">
+
+                    <div class="form-group">
+
+                        <label for="date">
+                            Date
+                        </label>
+
+                        <input
+                            type="date"
+                            id="date"
+                            name="date"
+                            required>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="time">
+                            Time
+                        </label>
+
+                        <select id="time" name="time" required>
+
+                            <option value="">
+                                Select time
+                            </option>
+
+                            <option value="12:00 PM">12:00 PM</option>
+                            <option value="12:30 PM">12:30 PM</option>
+                            <option value="01:00 PM">01:00 PM</option>
+                            <option value="01:30 PM">01:30 PM</option>
+
+                            <option value="07:00 PM">07:00 PM</option>
+                            <option value="07:30 PM">07:30 PM</option>
+                            <option value="08:00 PM">08:00 PM</option>
+                            <option value="08:30 PM">08:30 PM</option>
+                            <option value="09:00 PM">09:00 PM</option>
+                            <option value="09:30 PM">09:30 PM</option>
+
+                        </select>
+
+                    </div>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="guests">
+                        Number of Guests
+                    </label>
+
+                    <select id="guests" name="guests" required>
+
+                        <option value="">
+                            Select guests
+                        </option>
+
+                        <option value="1">1 Guest</option>
+                        <option value="2">2 Guests</option>
+                        <option value="3">3 Guests</option>
+                        <option value="4">4 Guests</option>
+                        <option value="5">5 Guests</option>
+                        <option value="6">6 Guests</option>
+                        <option value="7">7 Guests</option>
+                        <option value="8">8 Guests</option>
+                        <option value="9">9 Guests</option>
+                        <option value="10">10 Guests</option>
+
+                    </select>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="message">
+                        Special Request
+                    </label>
+
+                    <textarea
+                        id="message"
+                        name="message"
+                        rows="4"
+                        placeholder="Birthday, anniversary or any special request..."></textarea>
+
+                </div>
+
+
+                <button
+                    type="submit"
+                    class="reservation-button">
+                    Confirm Reservation →
+                </button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     CONTACT
+========================= -->
+<section class="section contact" id="contact">
+
+    <div class="section-heading">
+
+        <span class="section-label">
+            GET IN TOUCH
+        </span>
+
+        <h2>
+            Visit <span>Green Leaf</span>
+        </h2>
+
+        <p>
+            We would love to serve you.
+        </p>
+
+    </div>
+
+
+    <div class="contact-grid">
+
+        <div class="contact-card">
+
+            <div class="contact-icon">
+                📍
+            </div>
+
+            <h3>Visit Us</h3>
+
+            <p>
+                Green Leaf Restaurant<br>
+                Main Market Road<br>
+                Jaunpur, Uttar Pradesh
+            </p>
+
+        </div>
+
+
+        <div class="contact-card">
+
+            <div class="contact-icon">
+                📞
+            </div>
+
+            <h3>Call Us</h3>
+
+            <p>
+                <a href="tel:+919876543210">
+                    +91 98765 43210
+                </a>
+            </p>
+
+            <span>
+                Daily: 10:00 AM – 10:00 PM
+            </span>
+
+        </div>
+
+
+        <div class="contact-card">
+
+            <div class="contact-icon">
+                ✉️
+            </div>
+
+            <h3>Email Us</h3>
+
+            <p>
+                <a href="mailto:hello@greenleafveg.com">
+                    hello@greenleafveg.com
+                </a>
+            </p>
+
+            <span>
+                We reply within 24 hours
+            </span>
+
+        </div>
+
+
+        <div class="contact-card">
+
+            <div class="contact-icon">
+                🕐
+            </div>
+
+            <h3>Opening Hours</h3>
+
+            <p>
+                Monday – Sunday
+            </p>
+
+            <span>
+                10:00 AM – 10:00 PM
+            </span>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     CART
+========================= -->
+<div class="cart-overlay" id="cartOverlay">
+
+    <aside class="cart-sidebar">
+
+        <div class="cart-header">
+
+            <div>
+                <span class="cart-label">
+                    YOUR ORDER
+                </span>
+
+                <h2>Shopping Cart</h2>
+            </div>
+
+            <button
+                type="button"
+                class="close-cart"
+                onclick="closeCart()"
+                aria-label="Close cart">
+                ✕
+            </button>
+
+        </div>
+
+
+        <div class="cart-items" id="cartItems">
+
+            <div class="empty-cart">
+
+                <div class="empty-cart-icon">
+                    🛒
+                </div>
+
+                <h3>Your cart is empty</h3>
+
+                <p>
+                    Add some delicious vegetarian dishes to get started.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="cart-summary">
+
+            <div class="summary-row">
+
+                <span>Subtotal</span>
+
+                <strong id="cartSubtotal">
+                    ₹0
+                </strong>
+
+            </div>
+
+
+            <div class="summary-row">
+
+                <span>Delivery</span>
+
+                <strong>
+                    Free
+                </strong>
+
+            </div>
+
+
+            <div class="summary-total">
+
+                <span>Total</span>
+
+                <strong id="cartTotal">
+                    ₹0
+                </strong>
+
+            </div>
+
+
+            <button
+                type="button"
+                class="checkout-button"
+                onclick="checkout()">
+
+                🛍️ Place Order
+
+            </button>
+
+        </div>
+
+    </aside>
+
+</div>
+
+
+<!-- =========================
+     WHATSAPP
+========================= -->
+<a
+    href="https://wa.me/919876543210"
+    class="whatsapp-button"
+    target="_blank"
+    rel="noopener"
+    aria-label="Chat on WhatsApp">
+
+    💬
+
+</a>
+
+
+<!-- =========================
+     BACK TO TOP
+========================= -->
+<button
+    type="button"
